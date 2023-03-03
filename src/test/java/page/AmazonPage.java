@@ -10,10 +10,7 @@ public class AmazonPage {
 
     public AmazonPage() {
         PageFactory.initElements(Driver.getDriver(), this);
-
-
     }
-
     @FindBy(id = "twotabsearchtextbox")
     public WebElement aramaKutusu;
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
@@ -28,7 +25,6 @@ public class AmazonPage {
     public WebElement todaysdealsilkUrun;
      @FindBy(xpath ="//input[@id='ap_email']" )
      public WebElement signIn;
-
     @FindBy(id = "auth-error-message-box")
     public WebElement errorKutusu;
 
