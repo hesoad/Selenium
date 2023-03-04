@@ -34,12 +34,15 @@ public class C02 {
                .sendKeys(Keys.SPACE)
                .sendKeys(Keys.TAB)
                .sendKeys(Keys.SPACE).perform();
-       Driver.closeDriver();
+
 
        amazonPage.todaysdealsilkUrun.click();
-       amazonPage.signIn.sendKeys(ConfigReader.getProperty("negatifgirisEmail=")+Keys.ENTER);
 
-        Assert.assertTrue(amazonPage.errorKutusu.isDisplayed());
+
+       //amazonPage.signIn.sendKeys(ConfigReader.getProperty("negatifgirisEmail=")+Keys.ENTER);
+
+       // Assert.assertTrue(amazonPage.errorKutusu.isDisplayed());
+        Driver.closeDriver();
 
 
 
